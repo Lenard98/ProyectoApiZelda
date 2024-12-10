@@ -94,7 +94,7 @@ fun CharacterItem(character: Character) {
             .fillMaxWidth()
             .padding(8.dp),
         elevation = CardDefaults.cardElevation(defaultElevation = 4.dp),
-        colors = CardDefaults.cardColors(containerColor = Color(196, 175, 109)) // Igual a GameScreen
+        colors = CardDefaults.cardColors(containerColor = Color(196, 175, 109))
     ) {
         Column(modifier = Modifier.padding(16.dp)) {
             Text(
