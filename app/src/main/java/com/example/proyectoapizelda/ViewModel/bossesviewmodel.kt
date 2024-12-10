@@ -1,11 +1,10 @@
-package com.example.proyectoapizelda.implementacionAPI
+package com.example.proyectoapizelda.ViewModel
 
 import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.proyectoapizelda.implementacionAPI.ApiServices
 import com.example.proyectoapizelda.Modelos.Boss
-import com.example.proyectoapizelda.Modelos.MonsterResponse
+import com.example.proyectoapizelda.implementacionAPI.ApiServices
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
