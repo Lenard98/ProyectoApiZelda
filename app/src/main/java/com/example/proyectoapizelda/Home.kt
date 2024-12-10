@@ -33,6 +33,7 @@ fun HomeScreen() {
         Text(
             text = "APIZELDA",
             style = MaterialTheme.typography.headlineLarge.copy(color = Color.White),
+            fontFamily = zelda,
             modifier = Modifier
                 .align(Alignment.TopCenter)
                 .padding(top = 32.dp)
@@ -41,6 +42,7 @@ fun HomeScreen() {
         Text(
             text = "®ADFLL",
             style = MaterialTheme.typography.bodyLarge.copy(color = Color.White),
+            fontFamily = zelda,
             modifier = Modifier
                 .align(Alignment.BottomEnd)
                 .padding(16.dp)
