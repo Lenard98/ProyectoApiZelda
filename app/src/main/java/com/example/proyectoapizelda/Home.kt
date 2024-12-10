@@ -1,50 +1,49 @@
 package com.example.proyectoapizelda
 
-import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.height
-import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.*
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
-import androidx.compose.material3.TopAppBar
-import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
-import com.example.proyectoapizelda.R
+import coil3.compose.AsyncImage
 
-val zelda = FontFamily(
-    Font(R.font.zelda)
-)
-@OptIn(ExperimentalMaterial3Api::class)
+
+
 @Composable
-fun TopBarComponent() {
-
-    TopAppBar(
+fun HomeScreen() {
+    Box(
         modifier = Modifier
-            .fillMaxWidth()
-            .height(100.dp),
-        title = {
+            .fillMaxSize()
+            .background(Color(0, 0, 0))
+    ) {
 
-            Text(
-                text = "Zelda ",
-                style = TextStyle(
-                    fontFamily = zelda,
-                    fontSize = 24.sp,
-                    color = Color.White
-                ),
-                modifier = Modifier
-                    .padding(top = 20.dp)
-                    .fillMaxWidth(),
-                textAlign = androidx.compose.ui.text.style.TextAlign.Center
-            )
-        },
-        colors = TopAppBarDefaults.topAppBarColors(
-            containerColor = Color.Black
+        AsyncImage(
+            model = "https://wallpapers.com/images/featured-full/triforce-got6xicxxskxgye3.jpg",
+            contentDescription = null,
+            modifier = Modifier.fillMaxSize(),
+            alignment = Alignment.Center,
         )
-    )
+
+        Text(
+            text = "APIZELDA",
+            style = MaterialTheme.typography.headlineLarge.copy(color = Color.White),
+            modifier = Modifier
+                .align(Alignment.TopCenter)
+                .padding(top = 32.dp)
+        )
+
+        Text(
+            text = "®ADFLL",
+            style = MaterialTheme.typography.bodyLarge.copy(color = Color.White),
+            modifier = Modifier
+                .align(Alignment.BottomEnd)
+                .padding(16.dp)
+            )
+        }
 }
