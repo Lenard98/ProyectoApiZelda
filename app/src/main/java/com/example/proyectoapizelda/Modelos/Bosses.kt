@@ -15,5 +15,5 @@ data class Boss(
     val gender: String? = null,
     val race: String? = null,
     val id: String
-)
+) //Darwin
 
